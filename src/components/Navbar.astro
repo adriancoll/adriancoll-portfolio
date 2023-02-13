@@ -1,3 +1,7 @@
+---
+import HighlightText from './ui/highlightText.astro'
+---
+
 <div
   class='absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]'>
   <svg
@@ -28,18 +32,27 @@
     <div class='flex lg:flex-1'>
       <a href='#' class='-m-1.5 p-1.5'>
         <span class='sr-only'>Adrian Coll</span>
-        <img
-          class='h-8'
-          src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
-          alt=''
-        />
+        <svg
+          class='w-6 h-6 dark:text-background text-background-dark'
+          viewBox='0 0 177 156'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'>
+          <path
+            d='M177 49.2126H161.368C160.443 43.9575 158.826 39.3409 156.514 35.3627C154.245 31.3846 151.472 28.045 148.194 25.3438C144.958 22.5934 141.366 20.5307 137.416 19.1555C133.466 17.7804 129.347 17.0928 125.061 17.0928C117.245 17.0928 110.164 19.4011 103.819 24.0177C97.5159 28.6343 92.4942 35.4364 88.7543 44.4241C85.0564 53.4117 83.2074 64.4375 83.2074 77.5015C83.2074 90.5655 85.0564 101.591 88.7543 110.579C92.4942 119.567 97.5159 126.369 103.819 130.985C110.164 135.602 117.245 137.91 125.061 137.91C129.347 137.91 133.466 137.223 137.416 135.847C141.366 134.472 144.958 132.434 148.194 129.733C151.472 126.983 154.245 123.618 156.514 119.64C158.826 115.613 160.443 110.996 161.368 105.79H177C175.823 113.501 173.68 120.401 170.571 126.491C167.461 132.581 163.595 137.763 158.973 142.036C154.35 146.259 149.161 149.476 143.404 151.686C137.689 153.896 131.575 155.002 125.061 155.002C114.051 155.002 104.26 151.858 95.6879 145.572C87.1154 139.285 80.371 130.347 75.4544 118.756C70.5379 107.166 68.0797 93.414 68.0797 77.5015C68.0797 61.5889 70.5379 47.8374 75.4544 36.2468C80.371 24.6562 87.1154 15.7176 95.6879 9.43119C104.26 3.14475 114.051 0.00154049 125.061 0.00154049C131.575 0.00154049 137.689 1.10657 143.404 3.31665C149.161 5.52672 154.35 8.76817 158.973 13.041C163.595 17.2647 167.461 22.4215 170.571 28.5115C173.68 34.5524 175.823 41.4527 177 49.2126Z'
+            fill='currentColor'></path>
+          <path
+            fill-rule='evenodd'
+            clip-rule='evenodd'
+            d='M33.725 3.5581L0 154.998H16.33L24.85 114.753L28.045 98.9862L37.985 52.102C39.8783 43.389 41.3575 36.059 42.4225 30.112C43.4875 24.165 44.1383 20.2926 44.375 18.4947C44.6116 20.2926 45.2625 24.165 46.3275 30.112C47.3925 36.059 48.8716 43.4581 50.765 52.3094L60.705 98.9862L64.0775 114.753L72.5975 154.998H88.7499L55.2025 3.5581H33.725Z'
+            fill='currentColor'></path>
+        </svg>
       </a>
     </div>
     <div class='flex lg:hidden'>
       <button
         id='open-main-menu'
         type='button'
-        class='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'>
+        class='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5'>
         <span class='sr-only'>Abrir menú</span>
         <!-- Heroicon name: outline/bars-3 -->
         <svg
@@ -58,49 +71,75 @@
       </button>
     </div>
     <div class='hidden lg:flex lg:gap-x-12'>
-      <a href='#' class='text-sm font-semibold leading-6 text-gray-900'
-        >Inicio</a
-      >
+      <a href='#' class='text-sm font-semibold leading-6'>Inicio</a>
 
-      <a href='#' class='text-sm font-semibold leading-6 text-gray-900'
+      <a
+        href='#experience'
+        class='class="bg-gradient-to-r from-purple-200 to-blue-100 dark:from-purple-900 dark:to-cyan-700 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">'
         >Experiencia</a
       >
 
-      <a href='#' class='text-sm font-semibold leading-6 text-gray-900'
+      <a
+        href='#habilities'
+        class='class="bg-gradient-to-r from-purple-200 to-blue-100 dark:from-purple-900 dark:to-cyan-700 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">'
         >Habilidades</a
       >
 
-      <a href='#' class='text-sm font-semibold leading-6 text-gray-900'
+      <a
+        href='#reviews'
+        class='class="bg-gradient-to-r from-purple-200 to-blue-100 dark:from-purple-900 dark:to-cyan-700 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">'
         >Recomendaciones</a
       >
     </div>
-    <div class='hidden lg:flex lg:flex-1 lg:justify-end'>
-      <a href='#' class='text-sm font-semibold leading-6 text-gray-900'
-        >Descargar CV <spasan aria-hidden='true'>&rarr;</spasan></a
-      >
+    <div class='hidden lg:flex lg:flex-1 lg:justify-end group'>
+      <a
+        download
+        href='/docs/adriancoll-cv.pdf'
+        class='flex items-center gap-2 text-sm font-semibold leading-6 rounded-xl w-fit ring-0 ring-gray-600 p-2 focus:ring-gray-200 hover:ring-1'>
+        <span>Descargar CV</span>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          fill='none'
+          class='opacity-0 group-hover:opacity-100 hover:-translate-x-1 translate-x-0 transition duration-100'
+          viewBox='0 0 24 24'
+          stroke-width='1.5'
+          stroke='currentColor'
+          class='w-6 h-6'>
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            d='M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3'
+          ></path>
+        </svg>
+      </a>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div
-    class='hidden'
-    id='main-menu-modal'
-    role='dialog'
-    aria-modal='true'>
+  <div class='hidden' id='main-menu-modal' role='dialog' aria-modal='true'>
     <div
-      class='fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden'>
+      class='fixed inset-0 z-10 overflow-y-auto dark:bg-background-dark/50 backdrop-blur-xl bg-background/50 px-6 py-6 lg:hidden'>
       <div class='flex items-center justify-between'>
         <a href='#' class='-m-1.5 p-1.5'>
           <span class='sr-only'>Adrián Coll</span>
-          <img
-            class='h-8'
-            src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
-            alt=''
-          />
+          <svg
+            class='w-6 h-6 dark:text-background text-background-dark'
+            viewBox='0 0 177 156'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'>
+            <path
+              d='M177 49.2126H161.368C160.443 43.9575 158.826 39.3409 156.514 35.3627C154.245 31.3846 151.472 28.045 148.194 25.3438C144.958 22.5934 141.366 20.5307 137.416 19.1555C133.466 17.7804 129.347 17.0928 125.061 17.0928C117.245 17.0928 110.164 19.4011 103.819 24.0177C97.5159 28.6343 92.4942 35.4364 88.7543 44.4241C85.0564 53.4117 83.2074 64.4375 83.2074 77.5015C83.2074 90.5655 85.0564 101.591 88.7543 110.579C92.4942 119.567 97.5159 126.369 103.819 130.985C110.164 135.602 117.245 137.91 125.061 137.91C129.347 137.91 133.466 137.223 137.416 135.847C141.366 134.472 144.958 132.434 148.194 129.733C151.472 126.983 154.245 123.618 156.514 119.64C158.826 115.613 160.443 110.996 161.368 105.79H177C175.823 113.501 173.68 120.401 170.571 126.491C167.461 132.581 163.595 137.763 158.973 142.036C154.35 146.259 149.161 149.476 143.404 151.686C137.689 153.896 131.575 155.002 125.061 155.002C114.051 155.002 104.26 151.858 95.6879 145.572C87.1154 139.285 80.371 130.347 75.4544 118.756C70.5379 107.166 68.0797 93.414 68.0797 77.5015C68.0797 61.5889 70.5379 47.8374 75.4544 36.2468C80.371 24.6562 87.1154 15.7176 95.6879 9.43119C104.26 3.14475 114.051 0.00154049 125.061 0.00154049C131.575 0.00154049 137.689 1.10657 143.404 3.31665C149.161 5.52672 154.35 8.76817 158.973 13.041C163.595 17.2647 167.461 22.4215 170.571 28.5115C173.68 34.5524 175.823 41.4527 177 49.2126Z'
+              fill='currentColor'></path>
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M33.725 3.5581L0 154.998H16.33L24.85 114.753L28.045 98.9862L37.985 52.102C39.8783 43.389 41.3575 36.059 42.4225 30.112C43.4875 24.165 44.1383 20.2926 44.375 18.4947C44.6116 20.2926 45.2625 24.165 46.3275 30.112C47.3925 36.059 48.8716 43.4581 50.765 52.3094L60.705 98.9862L64.0775 114.753L72.5975 154.998H88.7499L55.2025 3.5581H33.725Z'
+              fill='currentColor'></path>
+          </svg>
         </a>
         <button
           id='close-main-menu'
           type='button'
-          class='-m-2.5 rounded-md p-2.5 text-gray-700'>
+          class='-m-2.5 rounded-md p-2.5'>
           <span class='sr-only'>Cerrar menú</span>
           <!-- Heroicon name: outline/x-mark -->
           <svg
@@ -123,32 +162,32 @@
           <div class='space-y-2 py-6'>
             <a
               href='#'
-              class='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10'
+              class='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10'
               >Inicio</a
             >
 
             <a
               href='#'
-              class='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10'
+              class='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10'
               >Experiencia</a
             >
 
             <a
               href='#'
-              class='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10'
+              class='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10'
               >Habilidades</a
             >
 
             <a
               href='#'
-              class='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10'
+              class='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10'
               >Recomendaciones</a
             >
           </div>
           <div class='py-6'>
             <a
               href='#'
-              class='-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10'
+              class='-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 hover:bg-gray-400/10'
               >Descargar CV</a
             >
           </div>

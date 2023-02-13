@@ -1,0 +1,17 @@
+---
+interface Props {
+  class?: string
+  [x: string]: any
+}
+
+const { class: className = '', ...others } = Astro.props
+---
+
+<span
+  {...others}
+  class:list={[
+    'bg-gradient-to-r from-primary-red to-primary-blue dark:from-primary-pink dark:to-primary-blue bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]',
+    className,
+  ]}>
+  <slot />
+</span>
